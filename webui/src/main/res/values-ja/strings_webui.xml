@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="requireNewVersion_cannot_load_webui">WebUI を読み込めません</string>
+    <string name="requireNewVersion_cannot_load_webui">WebUI X を読み込めません</string>
     <string name="requireNewVersion_refresh">更新</string>
     <string name="requireNewVersion_try_the_following">次のことをお試しください:</string>
     <string name="requireNewVersion_require_text">最低限必要: 最新の %1$s &gt;=</string>

@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="ads_name">آگهی</string>
+    <string name="ads_desc">این ماژول دارای آگهی است.</string>
+    <string name="knownvuln_name">آسیب‌پذیری شناخته‌شده</string>
+    <string name="nsfw_name">محتوای نامناسب</string>
+    <string name="nsfw_desc">این ماژول شامل محتوایی است که نباید در همه‌جا منتشر یا نمایش داده شود.</string>
+    <string name="nosourcesince_name">عدم دسترسی به کد منبع</string>
+    <string name="nosourcesince_desc">کد منبع دیگر در دسترس نیست و به‌روزرسانی ممکن نیست.</string>
+    <string name="nonfreeadd_desc">این ماژول افزونه‌های ناآزاد را آگهی می‌کند.</string>
+    <string name="nonfreeassets_name">دارایی‌های ناآزاد</string>
+    <string name="nonfreeassets_desc">این ماژول دارایی‌های ناآزاد دارد.</string>
+    <string name="nonfreedep_name">وابستگی‌های ناآزاد</string>
+    <string name="tracking_name">ردیابی</string>
+    <string name="tracking_desc">این ماژول کارهای شما را ردیابی و گزارش می‌کند.</string>
+    <string name="upstreamnonfree_name">کد منبع بالادستی ناآزاد</string>
+    <string name="upstreamnonfree_desc">کد منبع بالادستی کاملاً آزاد نیست.</string>
+    <string name="unaskedremoval_name">پاک کردن بدون اجازه</string>
+    <string name="unaskedremoval_desc">این ماژول بدون خواست کاربر برنامه‌ها، پروندها یا ماژول‌های دیگر را پاک می‌کند.</string>
+    <string name="llm_name">مدل زبانی بزرگ</string>
+    <string name="closedsource_name">منبع بسته</string>
+    <string name="knownvuln_desc">این ماژول دارای آسیب‌پذیری امنیتی شناخته‌شده‌ای است.</string>
+    <string name="nonfreeadd_name">افزونه‌های ناآزاد</string>
+    <string name="nonfreedep_desc">این ماژول به ماژول‌های ناآزاد دیگر وابسته است.</string>
+    <string name="nonfreenet_name">خدمات شبکه ناآزاد</string>
+    <string name="nonfreenet_desc">این ماژول خدمات شبکه غنازاد یا غیرقابل‌تغییر را آگهی می‌کند یا به آنها وابسته است.</string>
+    <string name="obfuscation_name">مبهم‌سازی</string>
+    <string name="obfuscation_desc">کد منبع این ماژول ممکن است مبهم‌سازی شده باشد، که درک، بررسی یا تغییر آن را دشوار می‌کند.</string>
+    <string name="llm_desc">این ماژول ممکن است کم یا زیاد به‌دست یک مدل زبانی بزرگ نوشته شده باشد</string>
+    <string name="closedsource_desc">این ماژول متن‌باز نیست و کد منبع آن برای بررسی، تغییر یا بازتوزیع در دسترس عموم نیست</string>
+</resources>

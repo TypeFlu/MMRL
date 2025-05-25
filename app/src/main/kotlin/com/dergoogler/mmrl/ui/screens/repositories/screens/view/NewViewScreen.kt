@@ -67,6 +67,7 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
@@ -715,11 +716,17 @@ fun NewViewScreen(
                     )
                 }
 
-
                 Text(
                     modifier = Modifier.padding(horizontal = 16.dp),
-                    text = module.description,
-                    style = MaterialTheme.typography.bodyMedium,
+                    text = module.description
+                        ?: stringResource(R.string.view_module_no_description),
+                    style = MaterialTheme.typography.bodyMedium.apply {
+                        if (module.description.isNullOrBlank()) {
+                            copy(
+                                fontStyle = FontStyle.Italic
+                            )
+                        }
+                    },
                     color = MaterialTheme.colorScheme.outline
                 )
 

@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
@@ -138,10 +139,17 @@ fun ModuleItemDetailed(
             modifier = Modifier
                 .alpha(alpha = alpha)
                 .padding(end = 16.dp, bottom = 16.dp, start = 16.dp),
-            text = module.description,
+            text = module.description
+                ?: stringResource(R.string.view_module_no_description),
             maxLines = 5,
             overflow = TextOverflow.Ellipsis,
-            style = MaterialTheme.typography.bodySmall,
+            style = MaterialTheme.typography.bodySmall.apply {
+                if (module.description.isNullOrBlank()) {
+                    copy(
+                        fontStyle = FontStyle.Italic
+                    )
+                }
+            },
             textDecoration = decoration,
             color = MaterialTheme.colorScheme.outline
         )

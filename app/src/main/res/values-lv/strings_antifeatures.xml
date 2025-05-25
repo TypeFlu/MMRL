@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ads_name">Reklāma</string>
+    <string name="ads_desc">Modulis satur reklāmas.</string>
+    <string name="knownvuln_name">Zināma ievainojamība</string>
+    <string name="nsfw_desc">Šis modulis satur saturu, kuru nevajadzētu publicēt vai redzēt visur.</string>
+    <string name="nsfw_name">Nepiemērots saturs</string>
+    <string name="nosourcesince_name">Pirmkods nav pieejams kopš</string>
+    <string name="nosourcesince_desc">Pirmkods vairs nav pieejams, atjauninājumi nav iespējami.</string>
+    <string name="nonfreeadd_desc">Šis modulis veicina maksas, nebrīvus papildinājumus.</string>
+    <string name="nonfreeadd_name">Nebrīvi papildinājumi</string>
+    <string name="tracking_name">Izsekošana</string>
+    <string name="tracking_desc">Šis modulis izseko un ziņo par jūsu aktivitātēm.</string>
+    <string name="obfuscation_name">Pieslēpšana</string>
+    <string name="obfuscation_desc">Moduļa pirmkods var būt pieslēpts, kas apgrūtina to izprast, auditēt vai veikt izmaiņas.</string>
+</resources>

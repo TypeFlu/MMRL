@@ -13,7 +13,7 @@ data class OnlineModuleEntity(
     val version: String,
     val versionCode: Int,
     val author: String,
-    val description: String,
+    val description: String? = null,
 
     val maxApi: Int? = null,
     val minApi: Int? = null,
@@ -40,12 +40,12 @@ data class OnlineModuleEntity(
     @Embedded val note: ModuleNoteEntity? = null,
     @Embedded val features: ModuleFeaturesEntity? = null,
     @Embedded val track: TrackJsonEntity,
-    @Embedded val blacklist: BlacklistEntity?
+    @Embedded val blacklist: BlacklistEntity?,
 ) {
     constructor(
         original: OnlineModule,
         repoUrl: String,
-        blacklist: Blacklist
+        blacklist: Blacklist,
     ) : this(
         id = original.id,
         repoUrl = repoUrl,

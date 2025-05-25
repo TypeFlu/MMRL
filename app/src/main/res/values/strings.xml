@@ -397,4 +397,6 @@
     <string name="drawer_general">General</string>
     <string name="settings_enable_toolbar_events">Enable Toolbar Events</string>
     <string name="unable_to_perform_reboot_task">Unable to perform reboot task</string>
+    <string name="architecture">Architecture</string>
+    <string name="view_module_no_description">No description provided.</string>
 </resources>

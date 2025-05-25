@@ -12,6 +12,12 @@ static bool ksuctl(int cmd, void* arg1, void* arg2) {
     return result == KERNEL_SU_OPTION;
 }
 
+bool get_hook_mode(char *mode, int mode_len) {
+    if (!mode || mode_len == 0) return false;
+    memset(mode, 0, mode_len);
+    return ksuctl(CMD_HOOK_MODE, mode, nullptr);
+}
+
 bool grant_root() {
     return ksuctl(CMD_GRANT_ROOT, nullptr, nullptr);
 }

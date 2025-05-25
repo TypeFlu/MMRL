@@ -100,7 +100,7 @@ class SearchViewModel @Inject constructor(
                         else ->
                             m.name.contains(key, ignoreCase = true) ||
                                     m.author.contains(key, ignoreCase = true) ||
-                                    m.description.contains(key, ignoreCase = true)
+                                    m.description?.contains(key, ignoreCase = true) == true
                     }
                 } else {
                     true

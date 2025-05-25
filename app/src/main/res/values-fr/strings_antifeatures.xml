@@ -6,4 +6,26 @@
     <string name="knownvuln_desc">Ce module contient une vulnérabilité de sécurité connue.</string>
     <string name="nsfw_desc">Ce module contient du contenu qui ne doit pas être rendu public ou visible partout.</string>
     <string name="nosourcesince_desc">Le code source n\'est plus disponible, aucune mise à jour possible.</string>
+    <string name="closedsource_name">Source fermée</string>
+    <string name="closedsource_desc">Le module n\'est pas open source et sa base de code n\'est pas accessible au public pour examen, modification ou redistribution</string>
+    <string name="nonfreeadd_name">Modules non libres</string>
+    <string name="nonfreeassets_name">Assets non libres</string>
+    <string name="nonfreeassets_desc">Ce module contient des assets non libres.</string>
+    <string name="nonfreeadd_desc">Ce module promeut des modules complémentaires non libres.</string>
+    <string name="nonfreedep_desc">Ce module dépend d\'autres modules non libres.</string>
+    <string name="tracking_name">Traçage</string>
+    <string name="upstreamnonfree_name">Amont non libre</string>
+    <string name="obfuscation_name">Obfuscation</string>
+    <string name="obfuscation_desc">Le code source du module peut être obfusqué, ce qui le rend difficile à comprendre, à auditer ou à modifier.</string>
+    <string name="unaskedremoval_name">Suppression non sollicitée</string>
+    <string name="unaskedremoval_desc">Le module supprime des applications, des fichiers ou d\'autres modules sans le consentement de l\'utilisateur.</string>
+    <string name="llm_name">Grand modèle de langage</string>
+    <string name="tracking_desc">Ce module trace et rapporte votre activité.</string>
+    <string name="nosourcesince_name">Aucune source depuis</string>
+    <string name="nonfreenet_desc">Ce module promeut ou dépend entièrement d\'un service réseau non modifiable ou non libre.</string>
+    <string name="nonfreenet_name">Services réseau non libres</string>
+    <string name="upstreamnonfree_desc">Le code source en amont n\'est pas entièrement libre.</string>
+    <string name="nsfw_name">NSFW</string>
+    <string name="nonfreedep_name">Dépendances non libres</string>
+    <string name="llm_desc">Le module peut être écrit en partie ou en totalité par un LLM</string>
 </resources>

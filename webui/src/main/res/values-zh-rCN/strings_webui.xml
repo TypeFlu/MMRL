@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="requireNewVersion_cannot_load_webui">无法加载 WebUI</string>
+    <string name="requireNewVersion_cannot_load_webui">无法加载 WebUI X</string>
     <string name="requireNewVersion_require_text">至少需要 %1$s &gt;=</string>
     <string name="requireNewVersion_try_the_following">请尝试:</string>
     <string name="requireNewVersion_try_the_following_one">从 Google Play 或 Github Releases 中更新 %1$s</string>

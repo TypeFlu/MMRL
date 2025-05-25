@@ -54,7 +54,8 @@ Java_com_dergoogler_mmrl_platform_ksu_KsuNative_isLkmMode(JNIEnv *env, jobject t
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_dergoogler_mmrl_platform_ksu_KsuNative_uidShouldUmount(JNIEnv *env, jobject thiz, jint uid) {
+Java_com_dergoogler_mmrl_platform_ksu_KsuNative_uidShouldUmount(JNIEnv *env, jobject thiz,
+                                                                jint uid) {
     return uid_should_umount(uid);
 }
 
@@ -66,6 +67,16 @@ Java_com_dergoogler_mmrl_platform_ksu_KsuNative_isSuEnabled(JNIEnv *env, jobject
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_dergoogler_mmrl_platform_ksu_KsuNative_setSuEnabled(JNIEnv *env, jobject thiz, jboolean enabled) {
+Java_com_dergoogler_mmrl_platform_ksu_KsuNative_setSuEnabled(JNIEnv *env, jobject thiz,
+                                                             jboolean enabled) {
     return set_su_enabled(enabled);
+}
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_dergoogler_mmrl_platform_ksu_KsuNative_getHookMode(JNIEnv *env, jobject thiz) {
+    char mode[16] = {0};
+    if (get_hook_mode(mode, sizeof(mode))) {
+        return env->NewStringUTF(mode);
+    }
+    return nullptr;
 }

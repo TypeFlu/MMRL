@@ -16,7 +16,7 @@ data class OnlineModule(
     val version: String,
     val versionCode: Int,
     val author: String,
-    val description: String,
+    val description: String? = null,
     val track: TrackJson,
     val versions: List<VersionItem>,
 

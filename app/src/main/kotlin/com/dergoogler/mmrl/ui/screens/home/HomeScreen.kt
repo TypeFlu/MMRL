@@ -240,6 +240,13 @@ fun HomeScreen(
                     }
                 )
 
+                ListItem(
+                    contentPaddingValues = listItemContentPaddingValues,
+                    icon = R.drawable.cpu_2,
+                    title = stringResource(R.string.architecture),
+                    desc = Os.uname().machine
+                )
+
                 SELinuxStatus(
                     contentPaddingValues = listItemContentPaddingValues
                 )

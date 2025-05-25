@@ -17,6 +17,9 @@ object KsuNative {
     const val MINIMAL_SUPPORTED_SU_COMPAT_NEXT = 12404
     const val MINIMAL_SUPPORTED_SU_COMPAT = 12040
 
+    // 12569: support get hook mode
+    const val MINIMAL_SUPPORTED_HOOK_MODE = 12569
+
     const val KERNEL_SU_DOMAIN = "u:r:su:s0"
 
     const val ROOT_UID = 0
@@ -35,6 +38,16 @@ object KsuNative {
     external fun getVersion(): Int
     external fun isLkmMode(): Boolean?
     external fun uidShouldUmount(uid: Int): Boolean
+
+    /**
+     * Get a string indicating the SU hook mode enabled in kernel.
+     * The return values are:
+     * - "Manual": Manual hooks was enabled.
+     * - "Kprobes": Kprobes hooks was enabled (CONFIG_KSU_KPROBES_HOOK).
+     *
+     * @return return hook mode, or null if unavailable.
+     */
+    external fun getHookMode(): String?
 
     /**
      * `su` compat mode can be disabled temporarily.

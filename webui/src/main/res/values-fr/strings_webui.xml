@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="requireNewVersion_cannot_load_webui">Impossible de charger l\'interface WebUI X</string>
+    <string name="requireNewVersion_require_text">nécessite au moins %1$s &gt;=</string>
+    <string name="requireNewVersion_try_the_following">Essayez ce qui suit :</string>
+    <string name="requireNewVersion_try_the_following_two">Contactez le développeur du module pour trouver une solution.</string>
+    <string name="requireNewVersion_refresh">Actualiser</string>
+    <string name="requireNewVersion_try_the_following_one">Mettre à jour %1$s vers la dernière version de Google Play ou des GitHub Releases.</string>
+</resources>

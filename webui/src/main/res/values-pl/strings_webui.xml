@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="requireNewVersion_cannot_load_webui">Nie można załadować WebUI</string>
+    <string name="requireNewVersion_cannot_load_webui">Nie można załadować WebUI X</string>
     <string name="requireNewVersion_require_text">wymaga co najmniej %1$s &gt;=</string>
     <string name="requireNewVersion_try_the_following">Wypróbuj poniższe rozwiązanie:</string>
     <string name="requireNewVersion_try_the_following_one">Zaktualizuj %1$s do najnowszej wersji, pobierając ją ze sklepu Google Play lub GitHub Releases.</string>
